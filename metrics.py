@@ -12,7 +12,7 @@ from sklearn.linear_model import LogisticRegression, LinearRegression
 import xgboost as xgb
 
 # Streamlit page configuration
-st.set_page_config(page_title="Machine Learning Model Selector")
+st.set_page_config(page_title="ML metrics")
 
 # File uploader
 file = st.file_uploader(
