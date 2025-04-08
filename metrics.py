@@ -55,8 +55,8 @@ if file:
 
 # Feature and target selection
 if not train.empty:
-    features = st.multiselect(label="Select Features", options=train.columns)
     target = st.selectbox(label="Select Target", options=train.columns)
+    features = st.multiselect(label="Select Features", options=train.columns, default=[col for col in train.columns if col != target])
     if features and target:
         x = train[features]
         y = train[target]
